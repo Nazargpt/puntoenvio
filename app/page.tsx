@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useEffect, useState<Transportist[]>([]) } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
