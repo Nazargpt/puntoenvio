@@ -2131,8 +2131,3 @@ export const getTransportistPaymentHistory = (transportistId: string): Array<{
     };
   });
 };
-
-export type Transportist = {
-  id: string;
-  nombre: string;
-};
