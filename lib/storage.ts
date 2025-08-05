@@ -1,8 +1,3 @@
-export type Transportist = {
-  id: string;
-  nombre: string;
-};
-
 
 // Original code:
 export interface Order {
@@ -2135,4 +2130,9 @@ export const getTransportistPaymentHistory = (transportistId: string): Array<{
       date: sheet.completedAt || sheet.createdAt
     };
   });
+};
+
+export type Transportist = {
+  id: string;
+  nombre: string;
 };
