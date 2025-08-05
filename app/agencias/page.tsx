@@ -1,5 +1,4 @@
-type Transportist = { id: string; nombre: string; };
-
+import { Transportist } from "@/lib/storage";
 
 'use client';
 
@@ -64,7 +63,7 @@ export default function Agencias() {
   });
   const [orders, setOrders] = useState<Order[]>([]);
   const [routeSheets, setRouteSheets] = useState<RouteSheet[]>([]);
-  const [transportists, setTransportists] = useState<Transportist[]>([]);
+  const [transportists, setTransportists] = useState([]);
   const [filter, setFilter] = useState('all');
   const [editingAgency, setEditingAgency] = useState(false);
   const [activeTab, setActiveTab] = useState('dashboard');

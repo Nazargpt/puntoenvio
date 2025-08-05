@@ -1,9 +1,3 @@
-type Order = { id: string; destino: string; };
-
-type Agency = { id: string; nombre: string; };
-
-type Transportist = { id: string; nombre: string; };
-
 
 'use client';
 
@@ -16,9 +10,9 @@ export default function Rutas() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState('');
   const [routes, setRoutes] = useState<Route[]>([]);
-  const [transportists, setTransportists] = useState<Transportist[]>([]);
-  const [agencies, setAgencies] = useState<Agency[]>([]);
-  const [orders, setOrders] = useState<Order[]>([]);
+  const [transportists, setTransportists] = useState([]);
+  const [agencies, setAgencies] = useState([]);
+  const [orders, setOrders] = useState([]);
   const [selectedRoute, setSelectedRoute] = useState<Route | null>(null);
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [newRoute, setNewRoute] = useState({

@@ -1,5 +1,3 @@
-type Order = { id: string; destino: string; };
-
 
 'use client';
 
@@ -30,7 +28,7 @@ export default function Transportistas() {
     plate: 'ABC123',
     type: 'local' as 'local' | 'larga-distancia'
   });
-  const [orders, setOrders] = useState<Order[]>([]);
+  const [orders, setOrders] = useState([]);
   const [routeSheets, setRouteSheets] = useState<RouteSheet[]>([]);
   const [selectedRouteSheet, setSelectedRouteSheet] = useState<string>('');
   const [isGeneratingRoute, setIsGeneratingRoute] = useState(false);

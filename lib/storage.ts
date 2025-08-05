@@ -1,3 +1,8 @@
+export type Transportist = {
+  id: string;
+  nombre: string;
+};
+
 
 // Original code:
 export interface Order {
